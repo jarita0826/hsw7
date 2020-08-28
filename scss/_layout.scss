@@ -1,0 +1,173 @@
+body {
+    font-family: 'Segoe UI', SegoeUI, 'Microsoft JhengHei', 微軟正黑體, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    .container {
+        padding: 0px;
+    }
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+nav {
+    background: white;
+    .logo {
+        float: left;
+        a {
+            background-image: url("../img/d’Perfume@2x.png");
+            // 最好不要因為要把文字變不見就把html文字拿掉
+            width: 128px;
+            height: 38px; //因為a標籤是行內標籤 要把它變成disblock
+            Display: block;
+            //去除html上的文字
+            //文字縮排
+            text-indent: 101%;
+            //規定段落中的文本不進行換行
+            white-space: nowrap;
+            //自動隱藏超出的文字或圖片
+            overflow: hidden;
+            //设置背景图片大小。图片可以保有其原有的尺寸
+            background-size: contain;
+        }
+    }
+    .hamCart {
+        position: relative;
+        i {
+            color: #8D8D8D;
+        }
+        span {
+            font-size: 12px;
+            position: absolute;
+            top: -5px;
+            right: 3px;
+            padding: 0 6px;
+            background-color: #916000 !important
+        }
+    }
+    .navBar {
+        color: white;
+        background: #707070;
+        ul {
+            background: #707070;
+            li {
+                margin: 0;
+                background: #707070;
+                a {
+                    background: #707070;
+                    border-top: 1px solid #C1C1C1;
+                    color: white !important
+                }
+            }
+        }
+    }
+}
+
+.navBart {
+    justify-content: flex-end;
+    a {
+        font-size: 20px;
+    }
+}
+
+.navbar-nav {
+    li {
+        margin: .5rem 0;
+        a {
+            color: #8D8D8D;
+            i {
+                color: #8D8D8D;
+            }
+        }
+    }
+}
+
+//  < !-- down_navbar -->
+.navBar {
+    display: none;
+    .navbar-nav {
+        display: none;
+    }
+}
+
+.navbar-toggler {
+    padding: 4px 6px;
+    border: none;
+    i {
+        font-size: 20px;
+    }
+}
+
+// < !-- subscribe_start-->
+.subscribe {
+    height: 600px;
+    background: url(../img/photo-1532413992378-f169ac26fff0@2x.png) no-repeat center center/cover;
+    .title {
+        margin-top: 312px;
+        .subscribeTitle {
+            color: #8D8D8D;
+            font-weight: 700;
+            margin-bottom: 20px;
+        }
+        form {
+            border: 2px solid #916000;
+            input:focus {
+                outline: none;
+                border: #765e30;
+            }
+            .btn {
+                background: #916000;
+                border: #916000;
+            }
+            .btn:focus {
+                outline: none; //點選按鈕不會有藍色邊框
+            }
+            .btn:hover {
+                background: #765e30;
+                border: #765e30;
+            }
+        }
+    }
+}
+
+// < !-- subscribe_end-->
+// < !-- footer_start-->
+footer {
+    background: #916000;
+    // height: 80px;
+    .footerLogo {
+        width: 128px;
+    }
+    .link {
+        color: white;
+    }
+    .link:hover {
+        color: #E0E0E0;
+    }
+}
+
+//  < !-- footer_end-->
+@media (max-width: 767px) {
+    .header {
+        max-width: 100%;
+    }
+    .navBar {
+        display: flex;
+        .navbar-nav {
+            display: flex;
+            // width: 375px;
+            li {
+                display: list-item;
+                text-align: -webkit-match-parent;
+                a {
+                    display: block;
+                }
+            }
+        }
+    }
+    .subscribeTitle,
+    .subscribeInput {
+        margin-right: 15px;
+        margin-left: 15px;
+    }
+}

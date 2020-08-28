@@ -1,0 +1,236 @@
+    @import "reset";
+    @import "bootstrap/bootstrap.scss";
+    @import "layout";
+    del {
+        color: #8D8D8D;
+    }
+    
+    // < !-- banner_start -->
+    .banner {
+        margin-bottom: 60px;
+        background: url(../img/photo-1588159343745-445ae0b16383@2x.png) no-repeat center center/cover;
+        height: 870px;
+        .row {
+            overflow: hidden;
+        }
+        .bannerText {
+            margin-top: 295px;
+            color: #FFFFFF;
+            h2 {
+                font-size: 40px;
+            }
+            p {
+                display: block;
+                font-size: 24px;
+                word-break: keep-all;
+            }
+            button {
+                width: 345px;
+                border-radius: 100px;
+                font-weight: 600;
+                font-size: 20px;
+                border: 2px solid;
+            }
+        }
+    }
+    
+    // < !-- banner_end -->
+    .pd {
+        padding-right: 0px;
+        padding-left: 0px;
+    }
+    
+    // <!-- productList_start  -->
+    .listDes {
+        font-size: 20px;
+    }
+    
+    .desTitle {
+        font-size: 32px;
+        font-weight: 700;
+    }
+    
+    .des_Title {
+        font-size: 24px;
+        font-weight: 700;
+    }
+    
+    .list_Des {
+        font-size: 16px;
+    }
+    
+    .onlinBtn {
+        width: 350px;
+        padding: 18px 50px;
+        background: white;
+        color: #000000;
+        border-radius: 100px;
+        font-weight: 600;
+        font-size: 20px;
+    }
+    
+    .linkMore {
+        font-size: 20px;
+        color: #AC8A46;
+        font-weight: 600;
+    }
+    
+    .linkMore:hover {
+        color: #916000;
+        text-decoration: none;
+    }
+    
+    // <!-- productList_end -->
+    // < !-- onSale_start -->
+    .onSale {
+        margin: 60px 0px;
+        h4 {
+            font-size: 24px;
+        }
+        .img {
+            position: relative;
+        }
+        .soldoutText {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background-color: rgba(0, 0, 0, .3);
+            color: white;
+            font-size: 24px;
+            margin-bottom: 0px;
+        }
+    }
+    
+    //  < !-- onSale_end -->
+    // < !-- description_start -->
+    .desPro {
+        h3 {
+            font-size: 32px;
+        }
+        h4 {
+            font-size: 20px;
+            font-weight: normal;
+        }
+    }
+    
+    //< !-- description_end -->
+    // < !-- product.html_start -->
+    .brandBar {
+        background: #916000;
+        font-size: 20px;
+        a {
+            color: #FFFFFF;
+        }
+        a:hover {
+            color: #AC8A46;
+        }
+    }
+    
+    .modal-body {
+        color: #916000;
+        font-weight: 700;
+    }
+    
+    .productList {
+        p {
+            margin-bottom: 4px;
+        }
+        a {
+            padding: 0px 3px;
+            color: #916000;
+            outline: none;
+        }
+        a:hover {
+            color: #AC8A46;
+        }
+    }
+    
+    .pageList {
+        color: #AC8A46;
+    }
+    
+    .pL {
+        color: black;
+    }
+    
+    .pL:hover {
+        color: #AC8A46;
+    }
+    
+    // < !-- product.html_end -->
+    // < !-- logIn.html_start -->
+    .logImg {
+        display: none;
+    }
+    
+    .pass {
+        font-weight: 700;
+        color: #916000;
+    }
+    
+    .inBtn {
+        background: #916000;
+        border-color: #916000;
+    }
+    
+    .inBtn:hover {
+        background: #AC8A46;
+        border-color: #916000;
+    }
+    
+    .signBtn {
+        color: #916000;
+        border-color: #916000;
+    }
+    
+    .signBtn:hover {
+        background: #916000;
+        border-color: #916000;
+    }
+    
+    // < !-- logIn.html_end -->
+    // < !-- RWD_start -->
+    @media (max-width: 767px) {
+        .banner {
+            margin-bottom: 40px;
+            height: 480px;
+            background: url(../img/photo-1588159343745-445ae0b16383@2x.png)no-repeat center top/cover;
+            .bannerText {
+                margin: 101px 15px;
+                h2 {
+                    font-size: 32px;
+                }
+                p {
+                    display: block;
+                    font-size: 20px;
+                    word-break: keep-all;
+                }
+                button {
+                    width: 345px;
+                    border-radius: 100px;
+                    font-weight: 600;
+                    font-size: 20px;
+                    border: 2px solid;
+                }
+            }
+        }
+        .brandBar {
+            display: none;
+        }
+        .productList {
+            margin-bottom: 30px;
+        }
+    }
+    
+    @media (max-width: 375px) {
+        .logImg2 {
+            display: none;
+        }
+        .logImg {
+            display: flex;
+        }
+    }
+    
+    // < !-- RWD_end -->
